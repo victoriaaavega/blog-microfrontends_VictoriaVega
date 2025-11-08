@@ -1,0 +1,143 @@
+/* --- Configuración base --- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, Sans-Serif;
+  background: #2b2c2f;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* --- Encabezado superior --- */
+header.toph {
+  background: linear-gradient(90deg, #3d3e42, #2b2c2f);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 2px solid #f29900;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Contenedor principal --- */
+main.center {
+  width: 600px;
+  max-width: 90%;
+  margin: 30px auto;
+  padding: 20px;
+  background: #3d3e42;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Enlaces generales --- */
+a {
+  color: #f29900;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+  color: #fff;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+/* --- Titulares y texto --- */
+h1, h2, h3 {
+  color: #f29900;
+  margin: 10px 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+p {
+  margin: 10px 0;
+  color: #e0e0e0;
+}
+
+/* --- Inputs y formularios --- */
+input.text, textarea.text {
+  border: 1px solid #555;
+  background: #f9f9f9;
+  color: #222;
+  border-radius: 6px;
+  padding: 8px;
+  width: 100%;
+  transition: border 0.3s ease, background 0.3s ease;
+}
+
+input.text:focus,
+textarea.text:focus {
+  border: 1px solid #f29900;
+  background: #fff;
+  outline: none;
+}
+
+input.button,
+input.searchbutton {
+  background: #f29900;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input.button:hover,
+input.searchbutton:hover {
+  background: #ffb84d;
+}
+
+/* --- Mensajes de error y éxito --- */
+.error, .success {
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.error {
+  background: #fff0f0;
+  color: #a30000;
+  border-left: 4px solid #a30000;
+}
+
+.success {
+  background: #f5fbe1;
+  color: #4b6d0b;
+  border-left: 4px solid #7ba813;
+}
+
+/* --- Pie de página --- */
+.footer {
+  margin-top: 40px;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  background: linear-gradient(90deg, #3d3e42, #2b2c2f);
+  border-top: 1px solid #555;
+}
+
+.footer a {
+  color: #f29900;
+}
+
+/* --- Layout responsivo --- */
+@media (max-width: 600px) {
+  main.center {
+    width: 95%;
+    margin: 15px auto;
+    padding: 15px;
+  }
+
+  header.toph {
+    height: 45px;
+    padding: 0 10px;
+  }
+}
