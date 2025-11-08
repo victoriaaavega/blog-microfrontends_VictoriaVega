@@ -19,7 +19,7 @@ export class Comments extends HTMLElement {
     #agregarEstilos(shadow) {
         let link = document.createElement('link');
         link.setAttribute('rel', 'stylesheet');
-        link.setAttribute('href', '../src/components/comments/comments.component.css');
+        link.setAttribute('href', './src/components/comments/comments.component.css');
         shadow.appendChild(link);
     }
 
@@ -48,7 +48,7 @@ export class Comments extends HTMLElement {
             span.innerHTML = comments.length;
             let div = shadow.querySelector('#divComments');
             let tmp = shadow.querySelector('#tmpComment');
-            comentarios.forEach(comment => {
+            comments.forEach(comment => {
                 this.#desplegarComentario(comment, div, tmp);
             })
         })

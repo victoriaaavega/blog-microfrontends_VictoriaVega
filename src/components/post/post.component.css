@@ -1,4 +1,5 @@
-section a {
+section a,
+section a:visited {
   color: #f29900;
   text-decoration: none;
   transition: color 0.3s ease, text-shadow 0.3s ease;
@@ -9,7 +10,6 @@ section a:hover {
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
 }
 
-/* --- Contenedor principal del post --- */
 section {
   background: #2b2c2f;
   border-radius: 10px;
@@ -26,7 +26,6 @@ section:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.45);
 }
 
-/* --- Título del post --- */
 section h2 {
   font-size: 1.4rem;
   margin: 0 0 8px 0;
@@ -34,7 +33,7 @@ section h2 {
   line-height: 1.3;
 }
 
-/* --- Contenido del post --- */
+
 section p#contenido {
   font-size: 1rem;
   color: #ddd;
@@ -43,7 +42,6 @@ section p#contenido {
   text-align: justify;
 }
 
-/* --- Información de fecha y autor --- */
 .date {
   color: #ccc;
   background: linear-gradient(90deg, #3d3e42, #2f3034);
@@ -58,7 +56,6 @@ section p#contenido {
   letter-spacing: 0.3px;
 }
 
-/* --- Enlace dentro del bloque de fecha (por consistencia) --- */
 .date a {
   color: #ccc;
   text-decoration: none;

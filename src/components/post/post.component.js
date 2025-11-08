@@ -1,5 +1,5 @@
-import { PostService } from "../../services/post.service";
-import { UserService } from "../../services/user.service";
+import { PostService } from "../../services/post.service.js";
+import { UserService } from "../../services/user.service.js";
 
 export class Post extends HTMLElement {
     #postService = new PostService();
@@ -20,7 +20,7 @@ export class Post extends HTMLElement {
     #agregarEstilos(shadow) {
         let link = document.createElement('link');
         link.setAttribute('rel', 'stylesheet');
-        link.setAttribute('href', '../src/components/post/post.component.css');
+        link.setAttribute('href', './src/components/post/post.component.css');
         shadow.appendChild(link);
     }
 
